@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" >
-<head>
-	<meta charset="UTF-8">
-	<title>SPM1: Figure 1 of the SPM for SR15</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/css/jqueryui.min.css'>
-<link rel='stylesheet' href='https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/css/jquery-ui-slider-pips.min.css'>
-<link rel='stylesheet' href='https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/css/app.min.css'>
-<!-- <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'> -->
-<link rel="stylesheet" href="./styles/styles.css">
-</head>
 <body>
 
 <div class="stuff">
@@ -20,78 +10,7 @@
 
     <p id='para_above_plot2'>Here we present an interactive version of figure SPM.1 in the Summary for Policymakers to help users understand how cumulative emissions of CO<sub>2</sub> and other climate drivers determine the probability of limiting warming to 1.5℃.
 
-    <main>
-            <p class='description_of_use'>Click and drag the blue dot to vary the year of net-zero CO<sub>2</sub> emissions. Click and drag the purple dot to vary the global energy imbalance in 2100 due to other climate drivers, called the non-CO<sub>2</sub> radiative forcing. Grey lines on the top panel show how the likely range of human-induced warming responds to those inputs using a simple climate model and the same methodology as the original figure. </p>
-
-
-    	<h2 id='figure_header'>SPM.1: Figure 1 of the Summary for Policymakers of the IPCC’s Special Report on Global Warming of 1.5°C.</h2>
-    	<div id='panel_a_container'>
-    		<div id="panel_a_div" style="width:900px;height:600px;display:inline-block;"></div>
-            <div id="panel_a_slider_ems">
-                <input type="range" min="2025" max="2100" value="2055" class="slider" id="myRange">
-            </div>
-            <div id="panel_a_slider_rf">
-                <input type="range" min="0" max="150" value="31" class="slider" id="myRange2">
-            </div>
-            <div id="panela_label">
-                <p id='labela' style="text-align:left"><b>a) Observed global temperature change and modeled responses to stylized anthropogenic emissions and forcing pathways</b></p>
-            </div>
-            <div id="panelb_label">
-                <p id='labelb' style="text-align:left"><b>b) Stylized net global CO<sub>2</sub> emissions</b></p>
-            </div>
-            <div id="panelc_label">
-                <p id='labelc' style="text-align:left"><b>c) Cumulative net CO<sub>2</sub> emissions</b></p>
-            </div>
-            <div id="paneld_label">
-                <p id='labeld' style="text-align:left"><b>d) Non-CO<sub>2</sub> radiative forcing</b></p>
-            </div>
-    	</div>
-        <p class="net_zero_year">  Year of net-zero: <span id="demo"></span></p><p class="non_co2_rf">2100 non-CO2 RF: <span id="demo2"></span> W/m2</p>
-
-    </main>
-
-    <!-- Trigger/Open The Modal -->
-    
-
-    <p id='below_stuff'>For further information see: <a href="https://www.ipcc.ch/sr15/" target="_blank">https://www.ipcc.ch/sr15/</a></p>
-
-    <p id='finalstuff' style="font-size: 0.8em">Written and hosted by <a target="_blank" href="https://github.com/stujen/SPMfigure_webpage">Stuart Jenkins</a> using GitHub Pages. <p id='date' style="float:right; text-align: center; font-size: 0.8em"></p></p>
-
-    <div id='buttonWrapper'>
-        <button id="myBtn">More information</button>
-    </div>
-
 </div>
-
-
-
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>SPM.1 Interactive: How to use</h2>
-
-    <p id='modal_text'>This interactive allows the user to change the date of net-zero CO<sub>2</sub> emissions (the time at which anthropogenic emissions of CO<sub>2</sub> reach zero) and the value of the end-of-century non-CO<sub>2</sub> radiative forcing (the energy imbalance in the climate system attributable to pollutants other than CO<sub>2</sub>) and see the globally averaged temperature response.</p>
-
-    <p id='modal_text'>Set the position of the blue dot on panel b to set the net-zero date for CO<sub>2</sub> emissions, and set the position of the purple dot on panel d to set the non-CO<sub>2</sub> radiative forcing in 2100.</p>
-
-    <p id='modal_text'>For further information on the design of the figure please refer to the IPCC Special Report on the Global Warming of 1.5°C.</p>
-  </div>
-
-</div>
-
-
-
-
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script src='https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/js/jquery-plus-ui.min.js'></script>
-<script src='https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/js/jquery-ui-slider-pips.js'></script>
-<script  src="./javascript/index.js"></script>
-
-
 
 </body>
 </html>
